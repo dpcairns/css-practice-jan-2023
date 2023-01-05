@@ -6,11 +6,35 @@
 }
 
 body {
-    font-family: var(--primary-font);
+    font-family: Anybody;
     background: var(--background);
     display: grid;
     grid-template-rows: auto 1fr;
 }
+
+html {
+   font-size: 10px;
+}
+
+/* main {
+    height: 1500px;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    flex-direction: column;
+} */
+
+.cool-box {
+    display: inline-block;
+    background-color: cyan;
+    border: solid 2px magenta;
+    background-image: url('https://www.placebear.com/200/200');
+    background-position: center;
+    background-size: 10px;
+    background-repeat: no-repeat;
+}
+
 
 header {
     position: sticky;
@@ -26,10 +50,42 @@ header {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-header .logo {
-    height: 100%;
-}
 
 main {
-    padding: 20px;
+    width: 940px;
+    margin: 0 auto;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+}
+
+
+* {
+    border: solid 1px black;
+}
+
+.left {
+    display: grid;
+}
+
+.middle {
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+}
+
+.community div {
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.community div p {
+    margin: 0;
+    height: 30px;
 }
